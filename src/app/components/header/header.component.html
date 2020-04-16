@@ -1,21 +1,21 @@
 <header style="margin: 0px 10% 0px 10%; ">
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: #fff;">
         <img class="" src="assets/img/Go-Bice-Logo-RGB.png">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+        <button (click)="toggleNavbar()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
             aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <div class="collapse navbar-collapse show" id="navbarTogglerDemo03" [ngClass]="{ 'show': navbarOpen }">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             </ul>
             <div class="form-inline my-2 my-lg-0">
-                <a class="nav-item nav-link active" href="#">Beneficios <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" href="#beneficios">Beneficios <span class="sr-only">(current)</span></a>
             </div>
             <div class="form-inline my-2 my-lg-0">
-                <a class="nav-item nav-link" href="#">Tarifas</a>
+                <a class="nav-item nav-link" href="#tarifas">Tarifas</a>
             </div>
             <div class="form-inline my-2 my-lg-0">
-                <a class="nav-item nav-link" href="#">Preguntas frecuentes</a>
+                <a class="nav-item nav-link" href="#preguntasFrecuentes">Preguntas frecuentes</a>
             </div>
             <div class="form-inline my-2 my-lg-0">
                 <button type="button" class="btn btn-primary" style="background-color: #1976D2;">Hazte cliente</button>
@@ -23,3 +23,6 @@
         </div>
     </nav>
 </header>
+
+
+
