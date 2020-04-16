@@ -9,6 +9,7 @@ import { TarifasComponent } from './components/tarifas/tarifas.component';
 import { CreaCuentaComponent } from './components/crea-cuenta/crea-cuenta.component';
 import { PreguntasFrecuentesComponent } from './components/preguntas-frecuentes/preguntas-frecuentes.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { BeneficiosComponent } from './components/beneficios/beneficios.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FooterComponent } from './components/footer/footer.component';
     TarifasComponent,
     CreaCuentaComponent,
     PreguntasFrecuentesComponent,
-    FooterComponent
+    FooterComponent,
+    BeneficiosComponent
   ],
   imports: [
     BrowserModule,
