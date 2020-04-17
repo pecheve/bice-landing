@@ -1,1 +1,36 @@
-<p>preguntas-frecuentes works!</p>
+<div class="tarifas-container">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h2>PREGUNTAS FRECUENTES</h2>
+            <h1>Resolvamos algunas dudas</h1>
+        </div>
+    </div>
+
+    <div class="row text-center">
+
+        <mat-accordion [multi]="true">
+            <mat-expansion-panel (closed)="isOpen = true" (opened)="isOpen = true">
+
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        ¿Qué es GO BICE?
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+
+                Es la primera cuenta vista del Bancoo BICE, que te permite comprar donde quieras, tanto en internet como en comercios físicos, retirar plata en cajeros automáticos y transferir a quién quieras.
+            </mat-expansion-panel>
+
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        ¿Qué es una cuenta vista?
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>I'm visible because I am open</p>
+            </mat-expansion-panel>
+        </mat-accordion>
+
+    </div>
+
+</div>
