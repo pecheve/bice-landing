@@ -8,13 +8,14 @@
 
         <div class="row justify-content-center mt-5">
 
-            <div class="col-md-6 d-none d-sm-none d-md-block">
-                <img src=" assets/img/brand.png " style="width: 100%;" />
+            <div class="col-md-6 d-none d-sm-none d-md-flex nopadding">
+                <!--<img src=" assets/img/brand.png " style="position: absolute; width: 632px;height: 601px; " />-->
+                <img src=" assets/img/brand.png " style="max-width: 100%;" />
             </div>
 
             <div class="col-md-6">
                 <mat-accordion [multi]="false">
-                    <mat-expansion-panel>
+                    <mat-expansion-panel [expanded]="true">
                         <mat-expansion-panel-header>
                             <mat-panel-title class="title">
                                 ¿Qué es GO BICE?
