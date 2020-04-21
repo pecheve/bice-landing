@@ -30,7 +30,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatExpansionModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [
+    {provide: 'googleTagManagerId',  useValue: "GTM-5JNGVV2"}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
