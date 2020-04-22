@@ -12,6 +12,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BeneficiosComponent } from './components/beneficios/beneficios.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HazteClienteComponent } from './components/hazte-cliente/hazte-cliente.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CreaCuentaComponent,
     PreguntasFrecuentesComponent,
     FooterComponent,
-    BeneficiosComponent
+    BeneficiosComponent,
+    HazteClienteComponent
   ],
   imports: [
     BrowserModule,
