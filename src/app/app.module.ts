@@ -26,7 +26,9 @@ import { BeneficiosComponent } from './components/beneficios/beneficios.componen
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    {provide: 'googleTagManagerId',  useValue: "GTM-5JNGVV2"}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
