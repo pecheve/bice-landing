@@ -10,6 +10,9 @@ import { CreaCuentaComponent } from './components/crea-cuenta/crea-cuenta.compon
 import { PreguntasFrecuentesComponent } from './components/preguntas-frecuentes/preguntas-frecuentes.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BeneficiosComponent } from './components/beneficios/beneficios.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HazteClienteComponent } from './components/hazte-cliente/hazte-cliente.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +23,14 @@ import { BeneficiosComponent } from './components/beneficios/beneficios.componen
     CreaCuentaComponent,
     PreguntasFrecuentesComponent,
     FooterComponent,
-    BeneficiosComponent
+    BeneficiosComponent,
+    HazteClienteComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatExpansionModule,
+    BrowserAnimationsModule
   ],
   providers: [
     {provide: 'googleTagManagerId',  useValue: "GTM-5JNGVV2"}
