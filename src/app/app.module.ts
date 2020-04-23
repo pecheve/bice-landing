@@ -13,6 +13,7 @@ import { BeneficiosComponent } from './components/beneficios/beneficios.componen
 import {MatExpansionModule} from '@angular/material/expansion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HazteClienteComponent } from './components/hazte-cliente/hazte-cliente.component';
+import { DeviceDetectorModule } from 'ngx-device-detector';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { HazteClienteComponent } from './components/hazte-cliente/hazte-cliente.
     BrowserModule,
     AppRoutingModule,
     MatExpansionModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    DeviceDetectorModule.forRoot()
   ],
   providers: [
     {provide: 'googleTagManagerId',  useValue: "GTM-5JNGVV2"}
