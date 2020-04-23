@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  urlGoBice:"https://desmova.bice.cl/landing-go-bice"
+  urlGoBice:"https://desmova.bice.cl/go-bice/"
 };
 
 /*
