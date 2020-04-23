@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {Location} from '@angular/common';
+
+import { DeviceDetectorService } from 'ngx-device-detector';
 
 @Component({
   selector: 'app-hazte-cliente',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HazteClienteComponent implements OnInit {
 
-  constructor() { }
+  isMobile: boolean;
+  isDesktopDevice: boolean;
+
+  constructor(private deviceService: DeviceDetectorService, location: Location) { }
 
   ngOnInit() {
+    this.isMobile = this.deviceService.isMobile();
+    this.isDesktopDevice = this.deviceService.isDesktop();
   }
 
 }
