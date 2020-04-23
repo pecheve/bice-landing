@@ -8,8 +8,13 @@
                 <p class="titulo"> Independízate y maneja tus lucas con tu primera cuenta BICE </p>
                 <p class="subTitulo">Obténla en 5 minutos de forma 100% digital</p>
                 <div class="mt-4">
-                    <button *ngIf="isMobile" onclick="window.location.href='https://www.bice.cl/go-bice/'" type="button" class="btn">Hazte cliente</button>
-                    <button *ngIf="!isMobile" onclick="window.location.href='#tarifas'" type="button" class="btn">Hazte cliente</button>
+                    <div class="d-none d-sm-none d-md-flex">
+                        <button onclick="window.location.href='https://www.bice.cl/go-bice/'" type="button" class="btn">Hazte cliente</button>
+                    </div>
+                    <div class="d-block d-sm-block d-md-none">
+                        <button onclick="window.location.href='#creaCliente'" type="button" class="btn">Hazte cliente</button>
+                    </div>
+
                 </div>
             </div>
 
