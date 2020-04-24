@@ -22,10 +22,6 @@ export class HazteClienteComponent implements OnInit {
     this.isMobile = this.deviceService.isMobile();
     this.isDesktopDevice = this.deviceService.isDesktop();
     this.url = this.isMobile ? environment.urlGoBice : '#creaCliente' ;
-    console.log("isMobile= " +this.isMobile);
-    console.log("isDesktopDevice= " +this.isDesktopDevice);
-  
-    console.log("url= " +this.url);
   }
 
 }
