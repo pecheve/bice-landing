@@ -17,7 +17,7 @@
                         <button onclick="window.location.href='#creaCliente'" type="button" class="btn">Hazte cliente</button>
                     </div>
                     -->
-                    <a class="btn btn-primary" href="{{url}}" style="background-color: #1976D2;" style="text-decoration: none;">Hazte cliente</a>
+                    <a *ngIf="!enviroment" class="btn btn-primary" href="{{url}}" style="background-color: #1976D2;" style="text-decoration: none;">Hazte cliente</a>
 
                 </div>
             </div>

@@ -17,12 +17,14 @@
             <div class="form-inline my-2 my-lg-0">
                 <a class="nav-item nav-link" href="#preguntasFrecuentes">Preguntas frecuentes</a>
             </div>
-            <div class="form-inline my-2 my-lg-0">
+            <div class="form-inline my-2 my-lg-0 d-block d-sm-none">
+                <a class="nav-item nav-link" href="assets/docs/Terminos_y_Condiciones.pdf"  target="_blank">Términos y condiciones</a>
+            </div>
+            <div *ngIf="!enviroment" class="form-inline my-2 my-lg-0">
                 <a  class="btn btn-primary" href="{{url}}" style="background-color: #1976D2;" style="text-decoration: none;">Hazte cliente</a>
             </div>
         </div>
     </nav>
 </header>
-
 
 
