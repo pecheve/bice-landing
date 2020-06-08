@@ -11,5 +11,8 @@ export class FooterComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  scroll(id) {
+    let elmnt = document.getElementById(id);
+    elmnt.scrollIntoView();
+  }
 }

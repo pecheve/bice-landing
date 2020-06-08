@@ -6,7 +6,8 @@
 
             <div class="col-md-6 nopadding texto">
                 <p class="titulo"> Independízate y maneja tus lucas con tu primera cuenta BICE </p>
-                <p class="subTitulo">Obténla en 5 minutos de forma 100% digital</p>
+                <br>
+                <p class="subTitulo">Inscríbete en el Early Bird y serás de los primeros en tenerla</p>
                 <div class="mt-4">
                     <!--
                     <div class="d-none d-sm-none d-md-flex">
@@ -17,7 +18,21 @@
                         <button onclick="window.location.href='#creaCliente'" type="button" class="btn">Hazte cliente</button>
                     </div>
                     -->
-                    <a *ngIf="!enviroment" class="btn btn-primary" href="{{url}}" style="background-color: #1976D2;" style="text-decoration: none;">Hazte cliente</a>
+                    <div>
+                        <label for="rut">Rut</label>
+                        <input type="text" name="rut" data-field-type="Text" required="required" data-validation-message="Ingrese un rut." style="margin-bottom:10px;">
+                    </div>
+
+                    <div>
+                        <label for="rut">Email</label>
+                        <input type="text" name="email" data-field-type="Text" required="required" data-validation-message="Ingrese un email."style="margin-bottom:10px;">
+                    </div>
+
+                    <div>
+                        <button class="btn btn-primary" style="min-width: 100%;margin-top: 45px;">Enviar</button>
+                        <!--<a *ngIf="!enviroment" class="btn btn-primary" href="{{url}}" style="background-color: #1976D2;" style="text-decoration: none;">Hazte cliente</a>-->
+                    </div>
+                    
 
                 </div>
             </div>

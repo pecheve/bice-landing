@@ -28,6 +28,10 @@ export class HeaderComponent implements OnInit {
     this.navbarOpen = !this.navbarOpen;
   }
 
+  scroll(id) {
+    let elmnt = document.getElementById(id);
+    elmnt.scrollIntoView();
+  }
 
 
 }

@@ -14,6 +14,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HazteClienteComponent } from './components/hazte-cliente/hazte-cliente.component';
 import { DeviceDetectorModule } from 'ngx-device-detector';
+import { UsaCuentaComponent } from './components/usa-cuenta/usa-cuenta.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { DeviceDetectorModule } from 'ngx-device-detector';
     PreguntasFrecuentesComponent,
     FooterComponent,
     BeneficiosComponent,
-    HazteClienteComponent
+    HazteClienteComponent,
+    UsaCuentaComponent
   ],
   imports: [
     BrowserModule,
